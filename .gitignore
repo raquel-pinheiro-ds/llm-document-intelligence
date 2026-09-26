@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data and model artifacts
+data/
+models/
+mlruns/
+*.parquet
+*.csv
+*.joblib
+*.pkl
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

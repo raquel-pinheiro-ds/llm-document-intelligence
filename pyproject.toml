@@ -1,0 +1,21 @@
+[project]
+name = "llm-document-intelligence"
+version = "0.1.0"
+description = "Classification, structured extraction and retrieval-augmented QA over financial documents with API and open-weight LLMs."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[dependency-groups]
+dev = ["ruff"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
