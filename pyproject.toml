@@ -1,14 +1,36 @@
 [project]
 name = "llm-document-intelligence"
 version = "0.1.0"
-description = "Classification, structured extraction and retrieval-augmented QA over financial documents with API and open-weight LLMs."
+description = "Sentiment classification, structured extraction and retrieval-augmented QA over financial documents with open-weight LLMs, evaluated against public ground truth."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
-dependencies = []
+dependencies = [
+    "accelerate",
+    "beautifulsoup4",
+    "bm25s",
+    "httpx",
+    "huggingface-hub",
+    "lxml",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "ppi-python>=0.2.3",
+    "pyarrow",
+    "pydantic>=2.13",
+    "pypdf",
+    "pyyaml",
+    "rapidfuzz",
+    "scikit-learn",
+    "scipy",
+    "sentence-transformers",
+    "statsmodels",
+    "transformers",
+]
 
 [dependency-groups]
 dev = ["ruff"]
+serve = ["fastapi", "uvicorn"]
 
 [build-system]
 requires = ["hatchling"]
